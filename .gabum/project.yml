@@ -1,0 +1,10 @@
+name: Data-Company-Website
+description: Here is a landing page for a data processing company or any company
+  with a modern dark UI look
+private: false
+license:
+  id: mit
+  name: MIT License
+author: Galitan-dev
+template: blank
+path: /Users/ethan/Documents/Development.nosync/Data-Company-Website
