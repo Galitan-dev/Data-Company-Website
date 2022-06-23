@@ -1,0 +1,196 @@
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v11/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuFuYMZg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/rubik/v20/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-NYi1UA.ttf) format('truetype');
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("/assets/fonts/Gilroy-Regular.eot") format("eot"), url("/assets/fonts/Gilroy-Regular.ttf") format("ttf"), url("/assets/fonts/Gilroy-Regular.woff") format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("/assets/fonts/Gilroy-ExtraBold.eot") format("eot"), url("/assets/fonts/Gilroy-ExtraBold.ttf") format("ttf"), url("/assets/fonts/Gilroy-ExtraBold.woff") format("woff");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("/assets/fonts/Gilroy-Black.eot") format("eot"), url("/assets/fonts/Gilroy-Black.ttf") format("ttf"), url("/assets/fonts/Gilroy-Black.woff") format("woff");
+  font-weight: 900;
+}
+* {
+  font-family: 'Gilroy', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 22px;
+  color: #8476AA;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  background: linear-gradient(222deg, #3B1D60, #040D3E);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 80px 170px;
+  overflow-x: hidden;
+}
+@media (max-width: 1180px) {
+  body {
+    margin: 80px 40px;
+  }
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .left {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  gap: 40px;
+  align-items: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 20px;
+}
+.header .left li {
+  transition: 0.5s;
+  color: #B5B5B5;
+}
+@media (max-width: 1050px) {
+  .header .left li:not(.logo) {
+    display: none;
+  }
+}
+.header .left li :hover {
+  color: #8476AA;
+}
+.header .right {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+@media (max-width: 400px) {
+  .header .right :not(.primary) {
+    display: none;
+  }
+}
+.button {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  color: #F2994A;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #F2994A;
+  transition: 0.3s;
+}
+.button:not(.primary):hover,
+.button.primary:not(:hover) {
+  background: #F2994A;
+  color: white;
+}
+.button.primary {
+  box-shadow: -11px 18px 36px rgba(242, 153, 74, 0.13);
+}
+.top-page {
+  margin-top: 135px;
+}
+.top-page .runner {
+  position: absolute;
+  height: 580px;
+  right: 0;
+  margin-top: -30px;
+}
+@media (max-width: 740px) {
+  .top-page .runner {
+    left: 20px;
+    right: auto;
+  }
+}
+@media (max-width: 1350px) {
+  .top-page .runner {
+    opacity: 0.5;
+  }
+}
+@media (max-width: 950px) {
+  .top-page .runner {
+    opacity: 0.2;
+  }
+}
+.top-page .introduction {
+  max-width: 540px;
+}
+.top-page .introduction h1 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 50px;
+  color: #99EFD0;
+}
+.top-page .introduction > p {
+  margin-top: 20px;
+}
+.top-page .introduction .buttons {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+}
+.top-page .introduction .video {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 60px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.top-page .introduction .video img {
+  height: 80px;
+  width: 140px;
+}
+.top-page .introduction .video a {
+  font-size: 14px;
+  color: #6D6D78;
+}
+.top-page .customers {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin-top: 60px;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.top-page .customers li {
+  transition: 0.3s;
+}
+.top-page .customers li:not(:hover) {
+  opacity: 0.3;
+}
+.top-page .customers li:hover {
+  opacity: 0.5;
+}
