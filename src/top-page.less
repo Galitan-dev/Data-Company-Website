@@ -1,0 +1,86 @@
+.top-page {
+    margin-top: 135px;
+
+    .runner {
+        position: absolute;
+        height: 580px;
+        right: 0;
+        margin-top: -30px;
+
+        @media (max-width: 740px) {
+            left: 20px;
+            right: auto;
+        }
+
+        @media (max-width: 1350px) {
+            opacity: .5;
+        }
+
+        @media (max-width: 950px) {
+            opacity: .2;
+        }
+    }
+
+    .introduction {
+        max-width: 540px;
+
+        h1 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            font-size: 44px;
+            line-height: 50px;
+            color: @secondary-color;
+        }
+
+        >p {
+            margin-top: 20px
+        }
+
+        .buttons {
+            margin-top: 40px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .video {
+            font-family: "Rubik", sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            margin-top: 60px;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+
+            img {
+                height: 80px;
+                width: 140px
+            }
+
+            a {
+                font-size: 14px;
+                color: @text-color-dark;
+            }
+        }
+    }
+
+    .customers {
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+        margin-top: 60px;
+        flex-wrap: wrap;
+        gap: 50px;
+
+        li {
+            transition: .3s;
+
+            &:not(:hover) {
+                opacity: .3;
+            }
+
+            &:hover {
+                opacity: .5;
+            }
+        }
+    }
+}
