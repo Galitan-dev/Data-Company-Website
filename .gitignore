@@ -11,3 +11,6 @@
 
 ### OS Files ###
 .DS_Store
+
+### MODULES ###
+node_modules
