@@ -1,0 +1,70 @@
+.stonks {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    @media (max-width: 990px) {
+        flex-direction: column;
+    }
+
+    .left {
+        max-width: 450px;
+
+        * {
+            text-align: left;
+        }
+
+        a {
+            margin-top: 40px;
+        }
+    }
+
+    .right {
+        position: relative;
+        height: 400px;
+        width: 440px;
+
+
+        @media (max-width: 500px) {
+            transform: scale(0.85);
+        }
+
+        @media (max-width: 400px) {
+            transform: scale(0.75);
+        }
+
+        img {
+
+            position: absolute;
+
+            &.graph,
+            &.picture,
+            &.stonks {
+                border-radius: 10px;
+            }
+
+            &.picture {
+                left: 107px;
+            }
+
+            &.graph {
+                top: 17px;
+            }
+
+            &.stonks {
+                top: 317px;
+                left: 142px;
+                box-shadow: -16px 25px 47px #13c2963d;
+            }
+
+            &.deco {
+                bottom: 0;
+                right: 0;
+            }
+
+        }
+    }
+
+}

@@ -53,13 +53,17 @@
 .button.primary {
   box-shadow: -11px 18px 36px rgba(242, 153, 74, 0.13);
 }
-h1 {
+h1,
+h1 * {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-  font-size: 44px;
+  font-size: 42px;
   line-height: 50px;
   color: #99EFD0;
   text-align: center;
+}
+b {
+  color: #F2994A;
 }
 h2 {
   font-weight: 800;
@@ -105,6 +109,7 @@ p > a {
 }
 .top-page .introduction h1 {
   text-align: left;
+  font-size: 44px;
 }
 .top-page .introduction h3 {
   text-align: left;
@@ -217,6 +222,64 @@ p > a {
 }
 .features .item p {
   grid-area: desc;
+}
+.stonks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+@media (max-width: 990px) {
+  .stonks {
+    flex-direction: column;
+  }
+}
+.stonks .left {
+  max-width: 450px;
+}
+.stonks .left * {
+  text-align: left;
+}
+.stonks .left a {
+  margin-top: 40px;
+}
+.stonks .right {
+  position: relative;
+  height: 400px;
+  width: 440px;
+}
+@media (max-width: 500px) {
+  .stonks .right {
+    transform: scale(0.85);
+  }
+}
+@media (max-width: 400px) {
+  .stonks .right {
+    transform: scale(0.75);
+  }
+}
+.stonks .right img {
+  position: absolute;
+}
+.stonks .right img.graph,
+.stonks .right img.picture,
+.stonks .right img.stonks {
+  border-radius: 10px;
+}
+.stonks .right img.picture {
+  left: 107px;
+}
+.stonks .right img.graph {
+  top: 17px;
+}
+.stonks .right img.stonks {
+  top: 317px;
+  left: 142px;
+  box-shadow: -16px 25px 47px #13c2963d;
+}
+.stonks .right img.deco {
+  bottom: 0;
+  right: 0;
 }
 * {
   font-family: 'Gilroy', sans-serif;
