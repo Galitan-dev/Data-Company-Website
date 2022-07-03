@@ -1,0 +1,35 @@
+.metrics {
+
+    .title {
+        max-width: 850px;
+        margin: 0 auto;
+    }
+
+    .items {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        gap: 50px 100px;
+        flex-wrap: wrap;
+
+
+        @media (max-width: 750px) {
+            justify-content: left;
+        }
+    }
+
+    .item {
+        max-width: 300px;
+    }
+
+
+    @media (max-width: 750px) {
+
+        .item,
+        title {
+            max-width: none;
+        }
+
+    }
+
+}
