@@ -65,7 +65,7 @@ h1 * {
 @media (max-width: 750px) {
   h1,
   h1 * {
-    text-align: left;
+    text-align: center !important;
   }
 }
 b {
@@ -83,7 +83,7 @@ h3 {
 }
 @media (max-width: 750px) {
   h3 {
-    text-align: left;
+    text-align: center !important;
   }
 }
 section {
@@ -254,6 +254,11 @@ p > a {
 .stonks .left a {
   margin-top: 40px;
 }
+@media (max-width: 750px) {
+  .stonks .left a {
+    margin: 40px auto 0;
+  }
+}
 .stonks .right {
   position: relative;
   height: 400px;
@@ -300,12 +305,12 @@ p > a {
   margin-top: 50px;
   display: flex;
   justify-content: center;
-  gap: 50px 100px;
+  gap: 50px 80px;
   flex-wrap: wrap;
 }
 @media (max-width: 750px) {
   .metrics .items {
-    justify-content: left;
+    justify-content: center;
   }
 }
 .metrics .item {
