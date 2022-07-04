@@ -87,7 +87,7 @@ h3 {
   }
 }
 section {
-  margin-top: 100px;
+  margin-top: 150px;
 }
 p > a {
   font-size: 14px;
@@ -314,6 +314,32 @@ p > a {
 @media (max-width: 750px) {
   .metrics .item,
   .metrics title {
+    max-width: none;
+  }
+}
+.get-started {
+  position: relative;
+  min-height: 550px;
+  z-index: 1;
+}
+.get-started h1 {
+  max-width: 850px;
+  margin: 0 auto;
+}
+.get-started a {
+  margin: 50px auto;
+  z-index: 2;
+}
+.get-started img {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 490px;
+  z-index: -1;
+}
+@media (max-width: 750px) {
+  .get-started h1 {
     max-width: none;
   }
 }
