@@ -6,6 +6,7 @@
 @import "sections/stonks.less";
 @import "sections/metrics.less";
 @import "sections/get-started.less";
+@import "sections/tracking.less";
 
 @text-color: #8476AA;
 @text-color-bright: #B5B5B5;
@@ -22,6 +23,7 @@
     font-size: 15px;
     line-height: 22px;
     color: @text-color;
+    // background: #009a2c4b !important;
 }
 
 a {
@@ -35,8 +37,10 @@ body {
     min-height: 100vh;
     margin: 80px 170px;
     overflow-x: hidden;
+    width: calc(100vw - 340px);
 
     @media (max-width: 1180px) {
-        margin: 80px 40px;
+        margin: 40px;
+        width: calc(100vw - 80px);
     }
 }
